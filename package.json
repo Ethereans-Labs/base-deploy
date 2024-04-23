@@ -1,0 +1,24 @@
+{
+    "name": "@etehreans-labs/base-deploy",
+    "version": "1.0.0",
+    "description": "Ethereans Protocol Stack verticalization for Base L2",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "multiverse-test": "mocha"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+        "@ethereansos/ethcomputationalorgs": "git+https://github.com/EthereansOS/ETHComputationalOrgs.git"
+    },
+    "multiverse": {
+        "knowledgeBase": "resources/knowledgeBase",
+        "solidityVersion": "0.8.6"
+    },
+    "mocha": {
+        "timeout": false,
+        "require": "@ethereansos/multiverse"
+    }
+}
